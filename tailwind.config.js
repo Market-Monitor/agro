@@ -2,9 +2,8 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["./src/**/*.{tsx,ts}"],
+  content: ["./src/**/*.{tsx,ts}"],
   mode: "jit",
-  darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
       "fire-opal": "#EE6352",

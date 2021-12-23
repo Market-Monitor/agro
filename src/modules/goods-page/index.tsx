@@ -10,7 +10,7 @@ const GoodsPage = () => {
   return (
     <DefaultLayout title="Nateng Good">
       <div className="mx-auto w-5/6 py-12">
-        <p className="text-gray-800 tracking-wide text-sm">
+        <p className="text-neutral-800 tracking-wide text-sm">
           Home &gt; market &gt; {slug}
         </p>
 

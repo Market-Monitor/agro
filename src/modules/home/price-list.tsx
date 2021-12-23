@@ -8,7 +8,7 @@ const LatestPriceList = () => {
           <h3 className="leading-loose text-3xl font-extrabold text-emerald-500">
             Top Prices
           </h3>
-          <p className="text-gray-400">{new Date().toLocaleString()}</p>
+          <p className="text-neutral-400">{new Date().toLocaleString()}</p>
         </div>
 
         <table className="table-fixed w-full">
@@ -24,7 +24,7 @@ const LatestPriceList = () => {
               <tr
               role="button"
                 key={index}
-                className="hover:bg-emerald-500 hover:text-white text-center text-coolGray-800 first:rounded-tl-lg first:rounded-bl-lg"
+                className="hover:bg-emerald-500 hover:text-white text-center text-gray-800 first:rounded-tl-lg first:rounded-bl-lg"
               >
                 <td className="py-3">{index + 1}</td>
                 <td className="py-3">{x.name}</td>

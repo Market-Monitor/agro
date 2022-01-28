@@ -11,28 +11,31 @@ const LatestPriceList = () => {
           <p className="text-neutral-400">{new Date().toLocaleString()}</p>
         </div>
 
-        <table className="table-fixed w-full">
-          <thead>
-            <tr className="border-b text-xl text-gray-900">
-              <th className="w-1/12 py-2">#</th>
-              <th className="w-full py-2">Vegetable / Fruit</th>
-              <th className="w-1/6 py-2">Current Price</th>
-            </tr>
-          </thead>
-          <tbody>
+        <div className="w-full">
+          <div>
+            <ul className="flex items-center justify-between text-gray-700 px-4 font-bold">
+              <li className="">No. #</li>
+              <li className="">Name</li>
+              <li className="">Current Price</li>
+            </ul>
+          </div>
+          <div className="mt-2">
             {data.map((x, index) => (
-              <tr
-              role="button"
+              <a
+                href="#"
+                role="button"
                 key={index}
-                className="hover:bg-emerald-500 hover:text-white text-center text-gray-800 first:rounded-tl-lg first:rounded-bl-lg"
+                className="flex items-center justify-between group px-4 py-2 my-1 rounded-lg bg-gray-100 hover:bg-emerald-500 hover:text-white text-center text-gray-800 text-sm"
               >
-                <td className="py-3">{index + 1}</td>
-                <td className="py-3">{x.name}</td>
-                <td className="py-3">&#8369; {x.price}</td>
-              </tr>
+                <div className="text-gray-500">{index + 1}</div>
+                <div className="text-gray-800 w-1/4 truncate">{x.name}</div>
+                <div className="font-bold tracking-wide text-emerald-500 group-hover:text-white text-lg">
+                  &#8369; {x.price}
+                </div>
+              </a>
             ))}
-          </tbody>
-        </table>
+          </div>
+        </div>
       </div>
     </div>
   );

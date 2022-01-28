@@ -3,14 +3,14 @@ import HeroImg from "./showcase.svg";
 
 const IndexHero = () => {
   return (
-    <div className="pt-32 pb-40 relative">
+    <div className="pt-32 pb-44 relative">
       <div className="absolute h-96 w-96 -bottom-4 right-12 z-20">
         <Image src={HeroImg} layout="fill" alt="" />
       </div>
 
       <div className="w-5/6 mx-auto text-left z-30">
-        <h1 className="text-5xl tracking-wide font-bold leading-snug text-neutral-800">
-          <span className="text-6xl text-emerald-500 font-black uppercase">
+        <h1 className="text-6xl tracking-wide font-bold leading-snug text-neutral-800">
+          <span className="text-7xl text-emerald-500 font-black uppercase">
             Real-Time
           </span>
           <br />
@@ -27,11 +27,11 @@ const IndexHero = () => {
                 name=""
                 id=""
                 placeholder="search for a vegetable, fruit..."
-                className="border w-full py-2 px-4 border-neutral-300 focus:border-emerald-500 focus:outline-none"
+                className="border rounded-lg w-full py-3 px-4 border-neutral-300 focus:border-emerald-500 focus:outline-none"
               />
               <button
                 type="submit"
-                className="py-2 px-8 ml-2 bg-emerald-500 opacity-80 hover:opacity-100 text-white border border-emerald-500"
+                className="py-3 px-8 rounded-lg ml-2 bg-emerald-500 opacity-80 hover:opacity-100 text-white border border-emerald-500"
               >
                 Search
               </button>

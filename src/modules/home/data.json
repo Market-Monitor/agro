@@ -4,7 +4,7 @@
     "price": "199"
   },
   {
-    "name": "Lorem Ipsum",
+    "name": "this should truncate since it is long and very very long and long",
     "price": "199"
   },
   {
